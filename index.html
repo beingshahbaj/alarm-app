@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-container">
+        <h2>Multiple Timers App</h2>
+        <div class="timer-input-section">
+        <audio src="call-to-attention-123107.mp3" controls="true" id="audio"></audio>
+            <h3>set time :</h3>
+            <!-- <label for="hours">Hours:</label> -->
+            <input type="number" id="hours" min="0" placeholder="Hr"> <span>:</span>
+            
+            <!-- <label for="minutes">Minutes:</label> -->
+            <input type="number" id="minutes" min="0" max="59" placeholder="Min"><span>:</span>
+            
+            <!-- <label for="seconds">Seconds:</label> -->
+            <input type="number" id="seconds" min="0" max="59" placeholder="Sec">
+            
+            <button class="set-time" onclick="startNewTimer()">Set</button>
+        </div>
+        <div class="current">Current Timers</div>
+        <div class="active-timers-section " id="activeTimers">
+            <h4 id="notime">You have no timers currently!</h4>
+            <!-- Active timers will be dynamically added here -->
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

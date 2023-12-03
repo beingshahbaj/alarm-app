@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 60px;
+  font-family: "Arial", sans-serif;
+ 
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100vh;
+  background-color: #1d1d23;
+}
+
+.app-container {
+  gap: 20px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer-input-section {
+    width: 590px;
+    border-radius: 20px;
+    background: #34344a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 24px;
+    gap: 15px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+h4{
+    color: #fff;
+    font-family: monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h3 {
+  color: #fff;
+  font-family: monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+input {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+}
+input::placeholder {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(145, 145, 145);
+  text-align: center;
+}
+span {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+#activeTimers {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.time{
+    letter-spacing: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.current {
+  width: fit-content;
+  padding: 8px 20px;
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+  border-radius: 50px;
+  background: #39393e;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.timer button,
+.set-time {
+  font-size: 15px;
+  border: none;
+  padding: 8px 40px;
+  border-radius: 20px;
+  background: #f0f757;
+  cursor: pointer;
+}
+.color{
+    gap: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    width: 590px;
+    padding: 22px 24px;
+    background-color: #F0F757;
+}
+
+.fontcolor{
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+
+.remove{
+    display: none;
+}
+
+audio{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
